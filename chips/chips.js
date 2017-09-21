@@ -19,7 +19,7 @@ var Chip = (function () {
         }
         if (typeof source === 'object') {
             this.text = source[textKey];
-            this.value = valueKey ? source[valueKey] : source;
+            this.value = valueKey && source[valueKey] ? source[valueKey] : source;
         }
     }
     return Chip;
